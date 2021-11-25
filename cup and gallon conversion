@@ -1,0 +1,70 @@
+#CONVERTING CUPS
+
+print("")
+print("")
+name = input("What is your name? ")
+print("")
+print("------------------")
+print("")
+date = input("What is the day? ")
+print("")
+print("------------------")
+print("")
+cups = int(input("**HOW MANY CUPS DOES YOUR RECIPIE CALL FOR ?.>>: "))
+print("")
+print("")
+gall = int(input("**HOW MANY GALLONS DOES YOUR RECIPE CALL FOR?.>>: "))
+
+c = cups
+#fluidounces
+fo = 8
+#TBSP
+tbsp = 16
+#teaspoon = 
+tsp = 48
+#milliliter
+ml = 237
+
+#converstions for cups and spoOns
+tfo = c * fo
+ttbsp = c * tbsp
+ttsp = c * tsp
+tml = c * ml
+tcup = (c / .333) 
+fcup = (c / .25) 
+hcup = (c / .50) 
+qcup = c *.25
+gcup = qcup / 4 
+
+#conversions for pints and quarts
+pint =  gall * .08 * 100
+quart = gall * .04 * 100
+cup = quart * 4
+ty = gall
+uy = pint
+og = quart
+
+#code
+print("")
+print("")
+print ("HERE ARE THE RESULTS FOR CUP CONVERSIONS:")
+print ("-----------------------------------------")
+print("")
+print("{} cups will equal out to".format(c))
+print("-" , tfo,"fluid ounces")
+print("-" , ttbsp,"TBSP")
+print("-" , ttsp,"tsp")
+print("-" , tml,"mililitter")
+print("-" , tcup,"x 1/3 cups")
+print("-" , fcup,"x 1/4 cups")
+print("-" , hcup,"x 1/2 cups")
+print("-" , qcup,", quarts")
+print("-" , gcup,", gall")
+print("")
+print("")
+print("HERE ARE THE RESULTS FOR CONVERTING YOUR GALLONS")
+print("------------------------------------------------")
+print("")
+print("{}, we have {} gallon(s) which makes {} pint(s) and in turn will create {} quart(s) and equals to {} cup(s) , today on {}".format(name, gall, uy, og, cup, date ))
+          
+
